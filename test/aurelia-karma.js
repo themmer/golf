@@ -46,7 +46,7 @@
       return originalLoadFn.call(this, context, moduleName, url)
     }
 
-    let originalDefine = global.define;
+    var originalDefine = global.define;
     global.define = function(name, deps, m) {
       if (typeof name === 'string') {
         originalDefine('/base/src/' + name, [name], function (result) { return result; });
