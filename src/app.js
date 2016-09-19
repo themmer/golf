@@ -1,4 +1,6 @@
 export class App {
+  // :id is used similar like Ember routes
+  // route and module id is required
   navigation = [
     { route: ['', 'home'], moduleId: './routes/home/home', nav: true, title: 'Home' },
     { route: 'info', moduleId: './routes/info/info', nav: true, title: 'Info' },
@@ -15,8 +17,6 @@ export class App {
     // config.options.root = '/';
     // config.title = 'Elkhorn Ridge Golf Course';
 
-    // :id is used similar like Ember routes
-    // route and module id is required
     config.map(this.navigation);
 
     // Default to home instead of an idea like 404
