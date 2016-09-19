@@ -1,0 +1,7 @@
+<nav bindable="router">
+  <ul>
+    <li repeat.for = "navItem of router.navigation" class="${navItem.isActive ? 'active' : ''}">
+        <a href.bind = "navItem.href">${navItem.title} TEST!</a>
+    </li>
+  </ul>
+</nav>
