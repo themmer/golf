@@ -132,6 +132,24 @@
             "path": "../node_modules/aurelia-testing/dist/amd",
             "main": "aurelia-testing",
             "env": "dev"
+          },
+          {
+            "name": "material-design-lite",
+            "path": "../node_modules/material-design-lite/dist",
+            "main": "material",
+            "resources": [
+              "material.css"
+            ]
+          },
+          {
+            "name": "aurelia-mdl-plugin",
+            "path": "../node_modules/aurelia-mdl-plugin/dist/amd",
+            "main": "index"
+          },
+          {
+            "name": "aurelia-google-maps",
+            "path": "../node_modules/aurelia-google-maps/dist/amd",
+            "main": "index"
           }
         ]
       }

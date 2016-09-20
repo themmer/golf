@@ -1,4 +1,5 @@
 import environment from './environment';
+import 'material-design-lite';
 
 //Configure Bluebird Promises.
 //Note: You may want to use environment-specific configuration.
@@ -11,7 +12,14 @@ Promise.config({
 export function configure(aurelia) {
   aurelia.use
     .standardConfiguration()
-    .feature('resources');
+    .feature('resources')
+    .plugin('aurelia-mdl-plugin');
+    //.plugin('aurelia-google-maps', config => {
+    //  config.options({
+    //    apiKey: 'myapiKey',
+    //    apiLibraries: 'drawing,geometry' //get optional libraries like drawing, geometry, ... - comma seperated list
+    //  });
+    //});
 
   if (environment.debug) {
     aurelia.use.developmentLogging();
